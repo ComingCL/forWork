@@ -7,8 +7,8 @@ spring:
     cache: false
   datasource:
     username: root
-    password: :9[a772;<ZS8=S
-    url: jdbc:mysql://localhost:3306/forWork?useUnicode=true&characterEncoding=utf-8&useSSL=true&allowMultiQueries=true
+    password: 123456
+    url: jdbc:mysql://localhost:3306/hello?useUnicode=true&characterEncoding=utf-8&useSSL=true&allowMultiQueries=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
 #      连接池名
@@ -30,11 +30,11 @@ spring:
 
 mybatis-plus:
 #  配置Mapper.xml配置文件
-  mapper-locations: classpath*:/Mapper/*Mapper.xml
+  mapper-locations: classpath*:/mapper/*Mapper.xml
 #  配置mybatis数据返回类型别名
-  type-aliases-package: com.example.Pojo
+  type-aliases-package: com.example.pojo
 
 # Mybatis SQL打印(方法接口所在的包)
 logging:
   level:
-    com.example.Mapper: debug
+    com.example.mapper: debug
